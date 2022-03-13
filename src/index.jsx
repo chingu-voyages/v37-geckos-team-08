@@ -1,3 +1,4 @@
+
 /* eslint-disable comma-dangle */
 /* eslint-disable object-curly-newline */
 /* eslint-disable quotes */
@@ -7,9 +8,12 @@ import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 import Dashboard from "./dashboard";
+import Nav from './Nav';
+
 
 ReactDOM.render(
   <BrowserRouter>
+    <Nav />
     <App />
     <Link to="/dashboard">dashboard</Link>
     <Routes>
